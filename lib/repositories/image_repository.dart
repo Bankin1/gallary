@@ -15,7 +15,7 @@ class ImageRepository {
   ];
 
   Future<List<ImageModel>> fetchImages(String category) async {
-    await Future.delayed(Duration(seconds: 1)); // Simulate network delay
+    await Future.delayed(Duration(seconds: 1)); // tipo setevoy delay
     return _images.where((image) => image.category == category).toList();
   }
 }
